@@ -1,0 +1,6 @@
+To do:
+- Code cleanup (DRY rank_current/rank_gained)
+- Output "your total lp" as "rank, x lp"
+- rank_new (how many [x] games played till [y] rank)
+- Visual side (make a simple interface)
+- Implement mmr system

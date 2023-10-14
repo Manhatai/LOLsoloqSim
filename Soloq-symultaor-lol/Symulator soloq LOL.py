@@ -4,8 +4,7 @@ from pyprobs import Probability as pr
 rank_current = input("Enter your rank: ")
 lp_count = int(input("Enter how much lp you have in your current rank: "))
 wr = int(input("Enter your winrate (could be global or on your favourite champion): ")) / 100
-
-
+g_expected = int(input("How many games do you want to play?: "))
 # rank_new = input("\nEnter the rank you would like to obtain: ") #Kiedyś żeby pisało ile gier zagrać +- aby mieć x range
 
 
@@ -21,7 +20,7 @@ def ranked_games(): # potrzebuje symulacji mmr
             lpki += rd.randint(-22, -18)  # -18lp / -22lp
         games.append(lpki)
         game_count += 1
-        if game_count == 1000:  # how many games played per sample?
+        if game_count == g_expected:  # how many games played per sample?
             break
     return lpki
 

@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe4e0f12-df3c-419c-93ed-05b3e236ba6b" name="Changes" comment="">
+    <list default="true" id="fe4e0f12-df3c-419c-93ed-05b3e236ba6b" name="Changes" comment="Added:&#10;- ability to input how many games you want to play">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Soloq-symultaor-lol/soloqsim_DEV.py" beforeDir="false" afterPath="$PROJECT_DIR$/Soloq-symultaor-lol/soloqsim_DEV.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +41,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/Mateusz/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0/LocalCache/local-packages/Python311/site-packages",
@@ -193,11 +194,21 @@
       <option name="presentableId" value="Default" />
       <updated>1685473470374</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added:&#10;- ability to input how many games you want to play">
+      <option name="closed" value="true" />
+      <created>1697273815840</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1697273815840</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="soloqsim" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="Added:&#10;- ability to input how many games you want to play" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added:&#10;- ability to input how many games you want to play" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

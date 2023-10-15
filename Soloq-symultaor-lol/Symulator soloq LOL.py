@@ -5,36 +5,34 @@ rank_current = input("Enter your rank: ")
 lp_count = int(input("Enter how much lp you have in your current rank: "))
 wr = int(input("Enter your winrate (could be global or on your favourite champion): ")) / 100
 g_expected = int(input("How many games do you want to play?: "))
-# rank_new = input("\nEnter the rank you would like to obtain: ") #Kiedyś żeby pisało ile gier zagrać +- aby mieć x range
 
-
-def ranked_games(): # potrzebuje symulacji mmr
+def ranked_games(): 
     games = []
     lpki = 0
     game_count = 0
     while True:
-        result = pr.prob(wr)  # returns a True/False value (50% winrate)
+        result = pr.prob(wr)  
         if result == True:
-            lpki += rd.randint(20, 25)  # +20lp / +25lp
+            lpki += rd.randint(20, 25)  
         if result == False:
-            lpki += rd.randint(-22, -18)  # -18lp / -22lp
+            lpki += rd.randint(-22, -18)  
         games.append(lpki)
         game_count += 1
-        if game_count == g_expected:  # how many games played per sample?
+        if game_count == g_expected:  
             break
     return lpki
 
 
 lp_total = []
 
-for i in range(1000):  # 1000 x 1000 games played
-    lpki = ranked_games()  # saving function results to variables
+for i in range(1000):  
+    lpki = ranked_games()  
     lp_total.append(lpki)
 
 result = sum(lp_total) / 1000
 result_whole = round(result)
 
-if rank_current == "iron IV":  # dodaje ilość lp z rangi jaką posiadasz do wyniku rangi którą otrzymasz po x grach (DRY - TO DO)
+if rank_current == "iron IV":  
     result_whole = result_whole + lp_count + 0
 elif rank_current == "iron III":
     result_whole = result_whole + lp_count + 100
@@ -92,7 +90,7 @@ elif rank_current == "diamond I":
     result_whole = result_whole + lp_count + 2700
 
 
-def rank_gained(result_whole):  # wypisuje rangę którą powinieneś otrzymać (DRY - TO DO)
+def rank_gained(result_whole):  
     if result_whole < 0:
         print("Your rank should be: iron IV")
     if result_whole in range(0, 99):
@@ -158,4 +156,4 @@ def rank_gained(result_whole):  # wypisuje rangę którą powinieneś otrzymać 
 rank_gained(result_whole)
 
 print(f"Your total lp after 1000 games: {result_whole}")
-# skrypt rolujący ilość gier na wbicie podanej rangi na podsatwie winratio
+

@@ -2,11 +2,12 @@ import random as rd
 import statistics as stat
 from pyprobs import Probability as pr
 rank_current = input("Enter your rank: ")
-lp_count = int(input("Enter how much lp you have in your current rank: "))
+lp_count = int(input("Enter how much lp you have in your current rank: ")) # Jesli wiecej niz 99, lub mniej niz 0, zwroc blad (TO DO)
 wr = int(input("Enter your winrate (could be global or on your favourite champion): ")) / 100
 g_expected = int(input("How many games do you want to play?: "))
 
 
+#
 
 #rank_new = input("\nEnter the rank you would like to obtain: ") #Kiedyś żeby pisało ile gier zagrać +- aby mieć x range
 

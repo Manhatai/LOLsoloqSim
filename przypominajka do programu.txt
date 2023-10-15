@@ -1,4 +1,4 @@
-Każdy test to 1000 gier od silver 4 0lp, równo 50% winratio przez wszystkie gry, bez uwzględnienia promo i zmiany mmr po winstreaku/loosestreaku
+Każdy test to 1000 gier od silver 4 0lp, równo 50% winratio przez wszystkie gry, ~~bez uwzględnienia promo~~ (juz nie istnieje) i zmiany mmr po winstreaku/loosestreaku
 Gain lp - +20/+25
 Loose lp - -21/-17 
 

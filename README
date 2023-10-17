@@ -1,5 +1,5 @@
 To do:
-- Code cleanup (DRY rank_current/rank_gained)
+- Code cleanup (DRY rank_current/rank_gained) [done]
 - Output "your total lp" as "rank, x lp"
 - rank_new (how many [x] games played till [y] rank)
 - Visual side (make a simple interface)

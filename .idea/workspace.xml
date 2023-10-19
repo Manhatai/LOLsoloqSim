@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe4e0f12-df3c-419c-93ed-05b3e236ba6b" name="Changes" comment="Added:&#10;- rewrote &quot;if rank_current&quot; into &quot;rank_types&quot; dict&#10;- rewrote &quot;rank_gained&quot; into dict instead of a bunch of if statements">
+    <list default="true" id="fe4e0f12-df3c-419c-93ed-05b3e236ba6b" name="Changes" comment="Added:&#10;- Displaying current rank as &quot;&lt;rank&gt;, &lt;lp amount&gt;&quot; instead of &lt;lp total&gt;">
+      <change afterPath="$PROJECT_DIR$/Soloq-symultaor-lol/test2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Soloq-symultaor-lol/Symulator soloq LOL.py" beforeDir="false" afterPath="$PROJECT_DIR$/Soloq-symultaor-lol/Symulator soloq LOL.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Soloq-symultaor-lol/Test.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Soloq-symultaor-lol/soloqsim_DEV.py" beforeDir="false" afterPath="$PROJECT_DIR$/Soloq-symultaor-lol/soloqsim_DEV.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +64,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.language&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.soloqsim_DEV (1)">
+  <component name="RunManager" selected="Python.test2">
     <configuration name="Symulator soloq LOL" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -169,7 +170,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="soloqsim_DEV" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="test2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -181,7 +182,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Mateusz\Desktop\Foldery ważne\soloqsim projekt python\Soloq-symultaor-lol\soloqsim_DEV.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Soloq-symultaor-lol/test2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -192,11 +193,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test2" />
         <item itemvalue="Python.soloqsim_DEV (1)" />
         <item itemvalue="Python.Symulator soloq LOL" />
-        <item itemvalue="Python.liczenie_tego_gowna" />
         <item itemvalue="Python.Test" />
-        <item itemvalue="Python.soloqsim_DEV" />
+        <item itemvalue="Python.liczenie_tego_gowna" />
       </list>
     </recent_temporary>
   </component>
@@ -233,7 +234,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697566278463</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added:&#10;- Displaying current rank as &quot;&lt;rank&gt;, &lt;lp amount&gt;&quot; instead of &lt;lp total&gt;">
+      <option name="closed" value="true" />
+      <created>1697642479220</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1697642479220</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -251,7 +260,8 @@
     <MESSAGE value="soloqsim" />
     <MESSAGE value="Added:&#10;- ability to input how many games you want to play" />
     <MESSAGE value="Added:&#10;- rewrote &quot;if rank_current&quot; into &quot;rank_types&quot; dict&#10;- rewrote &quot;rank_gained&quot; into dict instead of a bunch of if statements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added:&#10;- rewrote &quot;if rank_current&quot; into &quot;rank_types&quot; dict&#10;- rewrote &quot;rank_gained&quot; into dict instead of a bunch of if statements" />
+    <MESSAGE value="Added:&#10;- Displaying current rank as &quot;&lt;rank&gt;, &lt;lp amount&gt;&quot; instead of &lt;lp total&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added:&#10;- Displaying current rank as &quot;&lt;rank&gt;, &lt;lp amount&gt;&quot; instead of &lt;lp total&gt;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

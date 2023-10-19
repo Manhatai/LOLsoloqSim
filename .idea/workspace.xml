@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe4e0f12-df3c-419c-93ed-05b3e236ba6b" name="Changes" comment="Added:&#10;- Displaying current rank as &quot;&lt;rank&gt;, &lt;lp amount&gt;&quot; instead of &lt;lp total&gt;">
-      <change afterPath="$PROJECT_DIR$/Soloq-symultaor-lol/test2.py" afterDir="false" />
+    <list default="true" id="fe4e0f12-df3c-419c-93ed-05b3e236ba6b" name="Changes" comment="Added:&#10;- WIP">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Soloq-symultaor-lol/Test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Soloq-symultaor-lol/soloqsim_DEV.py" beforeDir="false" afterPath="$PROJECT_DIR$/Soloq-symultaor-lol/soloqsim_DEV.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Soloq-symultaor-lol/test2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Soloq-symultaor-lol/test2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,27 +105,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="liczenie_tego_gowna" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="pythonProject" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/OneDrive/Szkoła/Semestr 3/Elektronika i elektrotechnika/Projekt liczenie tego gowna w python/pythonProject" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/OneDrive/Szkoła/Semestr 3/Elektronika i elektrotechnika/Projekt liczenie tego gowna w python/pythonProject/liczenie_tego_gowna.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="pythonProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -191,13 +168,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pythonProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Soloq-symultaor-lol" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Soloq-symultaor-lol/test3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.test2" />
+        <item itemvalue="Python.test3" />
         <item itemvalue="Python.soloqsim_DEV (1)" />
         <item itemvalue="Python.Symulator soloq LOL" />
         <item itemvalue="Python.Test" />
-        <item itemvalue="Python.liczenie_tego_gowna" />
       </list>
     </recent_temporary>
   </component>
@@ -242,7 +240,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697642479220</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added:&#10;- WIP">
+      <option name="closed" value="true" />
+      <created>1697741273443</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1697741273443</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -261,7 +267,8 @@
     <MESSAGE value="Added:&#10;- ability to input how many games you want to play" />
     <MESSAGE value="Added:&#10;- rewrote &quot;if rank_current&quot; into &quot;rank_types&quot; dict&#10;- rewrote &quot;rank_gained&quot; into dict instead of a bunch of if statements" />
     <MESSAGE value="Added:&#10;- Displaying current rank as &quot;&lt;rank&gt;, &lt;lp amount&gt;&quot; instead of &lt;lp total&gt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added:&#10;- Displaying current rank as &quot;&lt;rank&gt;, &lt;lp amount&gt;&quot; instead of &lt;lp total&gt;" />
+    <MESSAGE value="Added:&#10;- WIP" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added:&#10;- WIP" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

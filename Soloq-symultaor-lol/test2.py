@@ -26,7 +26,6 @@ def ranked_games():
     games =[]
     lpki = 0
     game_count = 0
-    game_count_prob = 0
     while True:
         result = pr.prob(wr) # daje wartość True lub False bazowaną na zmiennej "wr"
         if result == True:
@@ -38,12 +37,11 @@ def ranked_games():
             if lpki + rank_types[rank_current] >= rank_types[rank_new]:
                 print("Ranga osiagnieta! koncze loop...")
                 print(f"Ilosc potrzebnych gier: {game_count}")
-                game_count_prob += game_count
+                game_count_prob.append(game_count)
                 print(game_count_prob)
                 break
         else:
             pass
-        print(game_count_prob)
 
         if game_count == games_expected:
             #print("Nie osiągnięto rangi. Oto wynik gier:")
@@ -57,6 +55,13 @@ def ranked_games():
     #print(lpki, "- Total amount of LP gained within 1000 games")
     #print(round(median), "- Average LP gained within 1000 games\n")
     return lpki, median
+
+game_count_prob = []
+
+GameCountProbSum = sum(game_count_prob)
+print(f"To jest srednia ilosc gier ktora potrzebujesz zeby osiagnac rangę: {GameCountProbSum}")
+
+
 
 
 lp_total = []
@@ -92,3 +97,4 @@ def rank_gained(result_whole):
 
 rank_gained(result_whole)
 print(f"Your total lp after {games_expected} games: {result_whole}")
+print(GameCountProbSum)

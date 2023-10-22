@@ -4,12 +4,13 @@ from pyprobs import Probability as pr
 rank_current = input("Enter your rank: ")
 lp_count = int(input("Enter how much lp you have in your current rank: ")) # Jesli wiecej niz 99, lub mniej niz 0, zwroc blad (TO DO)
 wr = int(input("Enter your winrate (could be global or on your favourite champion): ")) / 100
-games_expected = int(input("How many games do you want to play?: "))
 user_input = input("Would you like to calculate how many games it would take to get to a rank?: ")
 if user_input == 'yes':
     rank_new = input("Enter the rank you would like to obtain: ")
+    games_expected = 10000
 else:
-    pass
+    games_expected = int(input("How many games do you want to play?: "))
+
 
 
 #rank_new = input("\nEnter the rank you would like to obtain: ") #Kiedyś żeby pisało ile gier zagrać +- aby mieć x range
@@ -39,6 +40,7 @@ def ranked_games():
                 print(f"Ilosc potrzebnych gier: {game_count}")
                 game_count_prob.append(game_count)
                 print(game_count_prob)
+                print(games)
                 break
         else:
             pass
@@ -57,13 +59,6 @@ def ranked_games():
     return lpki, median
 
 game_count_prob = []
-
-GameCountProbSum = sum(game_count_prob)
-print(f"To jest srednia ilosc gier ktora potrzebujesz zeby osiagnac rangę: {GameCountProbSum}")
-
-
-
-
 lp_total = []
 medians = []
 
@@ -96,5 +91,9 @@ def rank_gained(result_whole):
             print(f"Your rank should be: {rank} {round(result_whole/100)}LP")
 
 rank_gained(result_whole)
+
 print(f"Your total lp after {games_expected} games: {result_whole}")
-print(GameCountProbSum)
+if user_input == "yes":
+    print(f"to jest ilosc gier jaka musisz zagrac zeby dobic rangę: {round((sum(game_count_prob))/len(game_count_prob))}")
+else:
+    pass

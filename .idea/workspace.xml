@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe4e0f12-df3c-419c-93ed-05b3e236ba6b" name="Changes" comment="Added:&#10;- WIP">
+    <list default="true" id="fe4e0f12-df3c-419c-93ed-05b3e236ba6b" name="Changes" comment="Added:&#10;- test2 file for testing purposes&#10;- 90% working &quot;rank_new&quot; variable which determines the amount of games you need to play to achieve a certain rank&#10;Removed:&#10;- test1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Soloq-symultaor-lol/soloqsim_DEV.py" beforeDir="false" afterPath="$PROJECT_DIR$/Soloq-symultaor-lol/soloqsim_DEV.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Soloq-symultaor-lol/test2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Soloq-symultaor-lol/test2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -248,7 +249,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697741273443</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added:&#10;- test2 file for testing purposes&#10;- 90% working &quot;rank_new&quot; variable which determines the amount of games you need to play to achieve a certain rank&#10;Removed:&#10;- test1">
+      <option name="closed" value="true" />
+      <created>1697756517022</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1697756517022</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -268,7 +277,8 @@
     <MESSAGE value="Added:&#10;- rewrote &quot;if rank_current&quot; into &quot;rank_types&quot; dict&#10;- rewrote &quot;rank_gained&quot; into dict instead of a bunch of if statements" />
     <MESSAGE value="Added:&#10;- Displaying current rank as &quot;&lt;rank&gt;, &lt;lp amount&gt;&quot; instead of &lt;lp total&gt;" />
     <MESSAGE value="Added:&#10;- WIP" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added:&#10;- WIP" />
+    <MESSAGE value="Added:&#10;- test2 file for testing purposes&#10;- 90% working &quot;rank_new&quot; variable which determines the amount of games you need to play to achieve a certain rank&#10;Removed:&#10;- test1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added:&#10;- test2 file for testing purposes&#10;- 90% working &quot;rank_new&quot; variable which determines the amount of games you need to play to achieve a certain rank&#10;Removed:&#10;- test1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

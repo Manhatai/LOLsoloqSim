@@ -1,44 +1,62 @@
 import random as rd
 from pyprobs import Probability as pr
-
 rank_current = input("Enter your rank: ")
-lp_count = int(input("Enter how much lp you have in your current rank: "))
+lp_count = int(input("Enter how much lp you have in your current rank: ")) # Jesli wiecej niz 99, lub mniej niz 0, zwroc blad (TO DO)
 wr = int(input("Enter your winrate (could be global or on your favourite champion): ")) / 100
-g_expected = int(input("How many games do you want to play?: "))
+user_input = input("Would you like to calculate how many games it would take to get to a rank?: ")
+if user_input == 'yes':
+    rank_new = input("Enter the rank you would like to obtain: ")
+    games_expected = 10000
+else:
+    games_expected = int(input("How many games do you want to play?: "))
 
-def ranked_games(): 
-    games = []
+game_count_prob = []
+lp_total = []
+medians = []
+
+
+rank_types = {"iron IV": 0, "iron III": 100, "iron II": 200, "iron I": 300, "bronze IV": 400, "bronze III": 500, "bronze II": 600, "bronze I": 700, "silver IV": 800, "silver III": 900, "silver II": 1000, "silver I": 1100, "gold IV": 1200, "gold III": 1300, "gold II": 1400, "gold I": 1500,"platinum IV": 1600, "platinum III": 1700, "platinum II": 1800, "platinum I": 1900, "emerald IV": 2000, "emerald III": 2100, "emerald II": 2200, "emerald I": 2300, "diamond IV": 2400, "diamond III": 2500, "diamond II": 2600, "diamond I": 2700 }
+
+def ranked_games():
+    with open ('writeme.txt', 'w') as file: #zapisywanie wyników?
+        file.write('writeme')
+    games =[]
     lpki = 0
     game_count = 0
     while True:
-        result = pr.prob(wr)  
+        result = pr.prob(wr) # daje wartość True lub False bazowaną na zmiennej "wr"
         if result == True:
-            lpki += rd.randint(20, 25)  
+            lpki += rd.randint(20, 25) # +20lp / +25lp
         if result == False:
-            lpki += rd.randint(-22, -18)  
+            lpki += rd.randint(-22, -18) # -18lp / -22lp
+
+        if user_input == 'yes':
+            if lpki + rank_types[rank_current] >= rank_types[rank_new]:
+                game_count_prob.append(game_count)
+                break
+        else:
+            pass
+
+        if game_count == games_expected:
+            break
+
         games.append(lpki)
         game_count += 1
-        if game_count == g_expected:  
-            break
     return lpki
 
 
-lp_total = []
-
-for i in range(1000):  
-    lpki = ranked_games()  
+for i in range(1000): # 1000 * "games_expected" zagranych gier
+    lpki = ranked_games()
     lp_total.append(lpki)
 
 result = sum(lp_total) / 1000
 result_whole = round(result)
 
 try:
-    rank_types = {"iron IV": 0, "iron III": 100, "iron II": 200, "iron I": 300, "bronze IV": 400, "bronze III": 500, "bronze II": 600, "bronze I": 700, "silver IV": 800, "silver III": 900, "silver II": 1000, "silver I": 1100, "gold IV": 1200, "gold III": 1300, "gold II": 1400, "gold I": 1500,"platinum IV": 1600, "platinum III": 1700, "platinum II": 1800, "platinum I": 1900, "emerald IV": 2000, "emerald III": 2100, "emerald II": 2200, "emerald I": 2300, "diamond IV": 2400, "diamond III": 2500, "diamond II": 2600, "diamond I": 2700 }
-    result_whole += lp_count + rank_types.get(rank_current)
+    result_whole += lp_count + rank_types.get(rank_current) #rank_current = klucz przypisany do wartości lp
 except TypeError:
     print("Wpisz poprawną nazwę rangi.")
     quit()
-
 
 
 def rank_gained(result_whole):
@@ -46,8 +64,14 @@ def rank_gained(result_whole):
     for (start, end), rank in rank_ranges.items():
         if start <= result_whole <= end:
             print(f"Your rank should be: {rank} {round(result_whole/100)}LP")
-
+    if result > 2799:
+        print(f"Your rank should be: master +")
 
 
 rank_gained(result_whole)
 
+print(f"Your total lp after {games_expected} games: {result_whole}")
+if user_input == "yes":
+    print(f"to jest ilosc gier jaka musisz zagrac zeby dobic rangę: {round((sum(game_count_prob))/len(game_count_prob))}")
+else:
+    pass

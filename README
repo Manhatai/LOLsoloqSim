@@ -1,6 +1,3 @@
 To do:
-- rank_new (how many [x] games played till [y] rank)
-- code cleanup (important)
-- idiot proofing
-- Visual side (make a simple interface)
+- Visual side (make a simple interface or a web app?)
 - Implement mmr system

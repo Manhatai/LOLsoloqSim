@@ -1,25 +1,23 @@
 import random as rd
 from pyprobs import Probability as pr
-rank_current = input("Enter your rank: ")
-lp_count = int(input("Enter how much lp you have in your current rank: ")) # Jesli wiecej niz 99, lub mniej niz 0, zwroc blad (TO DO)
-wr = int(input("Enter your winrate (could be global or on your favourite champion): ")) / 100
-user_input = input("Would you like to calculate how many games it would take to get to a rank?: ")
-if user_input == 'yes':
-    rank_new = input("Enter the rank you would like to obtain: ")
-    games_expected = 10000
-else:
-    games_expected = int(input("How many games do you want to play?: "))
-
-game_count_prob = []
-lp_total = []
-medians = []
 
 
-rank_types = {"iron IV": 0, "iron III": 100, "iron II": 200, "iron I": 300, "bronze IV": 400, "bronze III": 500, "bronze II": 600, "bronze I": 700, "silver IV": 800, "silver III": 900, "silver II": 1000, "silver I": 1100, "gold IV": 1200, "gold III": 1300, "gold II": 1400, "gold I": 1500,"platinum IV": 1600, "platinum III": 1700, "platinum II": 1800, "platinum I": 1900, "emerald IV": 2000, "emerald III": 2100, "emerald II": 2200, "emerald I": 2300, "diamond IV": 2400, "diamond III": 2500, "diamond II": 2600, "diamond I": 2700 }
+while True:
+    rank_current = input("Enter your rank: ")
+    lp_count = int(input("Enter how much lp you have in your current rank: ")) # Jesli wiecej niz 99, lub mniej niz 0, zwroc blad (TO DO)
+    wr = int(input("Enter your winrate (could be global or on your favourite champion): ")) / 100
+    user_input = input("Would you like to calculate how many games it would take to get to a rank?: ")
+    if user_input == 'yes':
+        rank_new = input("Enter the rank you would like to obtain: ")
+        games_expected = 10000
+    else:
+        games_expected = int(input("How many games do you want to play?: "))
+    game_count_prob = []
+    lp_total = []
+    medians = []
+    rank_types = {"iron IV": 0, "iron III": 100, "iron II": 200, "iron I": 300, "bronze IV": 400, "bronze III": 500, "bronze II": 600, "bronze I": 700, "silver IV": 800, "silver III": 900, "silver II": 1000, "silver I": 1100, "gold IV": 1200, "gold III": 1300, "gold II": 1400, "gold I": 1500,"platinum IV": 1600, "platinum III": 1700, "platinum II": 1800, "platinum I": 1900, "emerald IV": 2000, "emerald III": 2100, "emerald II": 2200, "emerald I": 2300, "diamond IV": 2400, "diamond III": 2500, "diamond II": 2600, "diamond I": 2700 }
 
 def ranked_games():
-    with open ('writeme.txt', 'w') as file: #zapisywanie wyników?
-        file.write('writeme')
     games =[]
     lpki = 0
     game_count = 0

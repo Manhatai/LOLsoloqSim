@@ -13,9 +13,11 @@ while True:
     while (rank_current not in rank_types) or (isinstance(rank_current, str) == False):
         print("Rank not found")
         rank_current = input("Enter your rank: ")
+        print(f"To jest ranga usera: {rank_current}")
 
     try:
         lp_count = int(input("Enter how much lp you have in your current rank (0 - 99): "))
+        print(f"To jest ilosc lp usera: {lp_count}")
         while (lp_count > 99) or (lp_count < 0):
             lp_count = int(input("Enter a valid LP count (0 - 99): "))
     except ValueError:
@@ -23,6 +25,7 @@ while True:
 
     try:
         wr = (int(input("Enter your winrate (1 - 100) (could be global or on your favourite champion): ")) / 100)
+        print(f"To jest wartosc winratio usera {wr}")
         while (wr > 1) or (wr < 0):
             wr = (int(input("Invalid winrate value (should be 1 - 100): ")) / 100)
     except ValueError:
@@ -104,7 +107,7 @@ while True:
             if start <= result_whole <= end:
                 print(f"Your rank should be: {rank} {proper_lp_count}LP")
             if result_whole >= 2800:
-                print(f"Your rank should be: master + {proper_lp_count - 2799}LP")
+                print(f"Your rank should be: master+ {proper_lp_count}LP")
                 break
 
 

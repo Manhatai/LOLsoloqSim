@@ -1,4 +1,4 @@
-# LOLsoloqSim
+ # LOLsoloqSim
 Console only version of SoloqSim interface, the way it was before converting it to oop code. Its very outdated now.
 
 Screenshots:
